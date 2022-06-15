@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: gray;
+}
+
 body {
     background-image: url('/images/background.png');
     background-repeat: no-repeat;
@@ -79,6 +88,30 @@ body {
     margin-left: 55%;
 }
 
+.projects {
+    margin-left: 55%; margin-right: 5%; margin-top: 30%;
+}
+
+.projectsText {
+    font-family: 'Caveat', cursive, sans-serif; font-size: 10vh;
+}
+
+.firstProj {
+    display: flex;
+}
+
+.image1stProj {
+    width: 20%; flex: 1
+}
+
+.image1stProj img {
+    width: 100%;
+}
+
+.firstProjDes {
+    flex: 1;  font-family: 'Poppins', sans-serif; font-size: 2.5vh; display: flex; align-items: center; text-align: justify; margin-left: 1%;
+}
+
 /* .projects {
     margin-left: 55%;
     margin-top: 30%;
@@ -94,11 +127,22 @@ body {
     }
 }
 
+
+
+
+
+
+/* Media Queries */
+
+
+/* 1916px */
 @media screen and (max-width: 1916px) {
     .typing, .hello {
         font-size: 10vh;
     }
 }
+
+/* 1434px */
 
 @media screen and (max-width: 1434px) {
     .aboutTitle {
@@ -114,6 +158,8 @@ body {
     }
   
 }
+
+/* 1488px */
 
 @media screen and (max-width: 1488px) {
     .blink {
@@ -137,6 +183,8 @@ body {
     }
 }
 
+/* 1382px */
+
 @media screen and (max-width: 1382px) {
     .typing, .hello {
         font-size: 10vh;
@@ -147,9 +195,7 @@ body {
         padding: 1%;
         margin-top: 25%;
     }
-}
 
-@media screen and (max-width: 1382px) {
     .aboutTitle {
         font-size: 3vh;
         background: rgba(255, 255, 255, 0.7);
@@ -162,6 +208,9 @@ body {
         padding: 1%;
     }
 }
+
+/* 1133px */
+
 
 @media screen and (max-width: 1133px) {
     .about {
@@ -180,8 +229,26 @@ body {
         font-size: 3vh;
     }
 
-   
+    .projects {
+        margin-left: 5%;
+    }
+    
+    .projectsText {
+        background: rgba(255, 255, 255, 0.7);
+        padding: 1%;
+    }
+
+    .firstProj {
+        background: rgba(255, 255, 255, 0.7);
+        padding: 1%;
+    }
+
+    .firstProjDes span {
+        font-size: 3.5vh;
+    }
 }
+
+/* 883px */
 
 @media screen and (max-width: 883px) {
     .typing, .hello {
@@ -192,6 +259,10 @@ body {
         background: rgba(255, 255, 255, 0.7);
         padding: 1%;
         margin-top: 40%;
+    }
+    
+    .firstProjDes span {
+        font-size: 2vh;
     }
 }
 
