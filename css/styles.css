@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('/images/background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.intro {
+
+}
+
+.hello {
+    font-family: 'Caveat', cursive, sans-serif;
+    font-size: 15vh;
+
+}
+
+.blink {
+    margin-left: 55%;
+    margin-top: 10%;
+}
+
+.typing {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15vh;
+    /* position: relative; */
+}
+
+.typing::after {
+    content: "";
+    /* position: absolute; */
+    width: 100px;
+    height: 100%;
+    border-right: 2px solid black;
+    animation: blink 0.5s infinite ease;
+}
+
+.about {
+    display: flex;
+}
+
+.aboutText, .profileImage {
+    flex: 1;
+}
+
+.profileImage {
+  
+    display: flex;
+    align-items: center;
+}
+
+.myProfileImage {
+    width: 100%;
+    left: 10px;
+    border-radius: 50%;
+    left: 10%;
+    top: 5%;
+
+}
+
+
+.aboutTitle {
+    font-family: 'Caveat', cursive, sans-serif;
+    font-size: 10vh;
+}
+
+.aboutDescription {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5vh;
+}
+
+.about {
+    margin-top: 50vh;
+    margin-left: 55%;
+}
+
+/* .projects {
+    margin-left: 55%;
+    margin-top: 30%;
+} */
+
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1916px) {
+    .typing, .hello {
+        font-size: 10vh;
+    }
+}
+
+@media screen and (max-width: 1434px) {
+    .aboutTitle {
+        font-size: 5vh;
+        background: rgba(255, 255, 255, 0.7);
+        padding: 1%;
+    }
+
+    .aboutDescription {
+        font-size: 2vh;
+        background: rgba(255, 255, 255, 0.7);
+        padding: 1%;
+    }
+  
+}
+
+@media screen and (max-width: 1488px) {
+    .blink {
+        background: rgba(255, 255, 255, 0.7);
+        padding: 1%;
+        margin-top: 20%;
+    }
+
+    
+}
+
+@media screen and (max-width: 1382px) {
+    .typing, .hello {
+        font-size: 5vh;
+    }
+
+    .blink {
+        background: rgba(255, 255, 255, 0.7);
+        padding: 1%;
+        margin-left: 40%;
+    }
+}
+
+@media screen and (max-width: 1382px) {
+    .typing, .hello {
+        font-size: 10vh;
+    }
+
+    .blink {
+        background: rgba(255, 255, 255, 0.7);
+        padding: 1%;
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 1382px) {
+    .aboutTitle {
+        font-size: 3vh;
+        background: rgba(255, 255, 255, 0.7);
+        padding: 1%;
+    }
+
+    .aboutDescription {
+        font-size: 1.5vh;
+        background: rgba(255, 255, 255, 0.7);
+        padding: 1%;
+    }
+}
+
+@media screen and (max-width: 1133px) {
+    .about {
+        margin-left: 10vh;
+    }
+
+    .myProfileImage {
+        width: 100%;
+    }
+
+    .aboutTitle {
+        font-size: 5vh;
+    }
+
+    .aboutDescription {
+        font-size: 3vh;
+    }
+
+   
+}
+
+@media screen and (max-width: 883px) {
+    .typing, .hello {
+        font-size: 8vh;
+    }
+
+    .blink {
+        background: rgba(255, 255, 255, 0.7);
+        padding: 1%;
+        margin-top: 40%;
+    }
+}
+
+@media screen and (max-width: 739px) {
+    .typing, .hello {
+        font-size: 5vh;
+    }
+
+    .blink {
+        background: rgba(255, 255, 255, 0.7);
+        padding: 1%;
+        margin-top: 60%;
+    }
+
+    .aboutTitle {
+        font-size: 3vh;
+    }
+
+    .aboutDescription {
+        font-size: 1.5vh;
+    }
+
+    .myProfileImage {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 439px) {
+    .typing, .hello {
+        font-size: 3vh;
+    }
+
+    .blink {
+        background: rgba(255, 255, 255, 0.7);
+        padding: 1%;
+        margin-top: 90%;
+    }
+}
+
+@media screen and (max-width: 439px) {
+    .typing, .hello {
+        font-size: 2vh;
+    }
+
+    .aboutTitle {
+        font-size: 2vh;
+    }
+
+    .aboutDescription {
+        font-size: 1.1vh;
+    }
+}
