@@ -19,9 +19,6 @@ a:hover {
     color: gray;
 }
 
-.intro {
-
-}
 
 .hello {
     font-family: 'Caveat', cursive, sans-serif;
@@ -49,9 +46,39 @@ a:hover {
     animation: blink 0.5s infinite ease;
 }
 
-.about {
+.aboutB {
+    margin-left: 55%;
+    margin-top: 30%;
+}
+
+.myProfile {
+    width: 100%;
+}
+
+
+.aboutA {
     display: flex;
 }
+
+.about3 {
+    font-family: 'Caveat', cursive, sans-serif;
+    font-size: 10vh;
+}
+
+.about5 {
+    font-family: 'Poppins', sans-serif;
+    flex: 1;
+    font-size: 3vh;
+}
+
+.about6 {
+    width: 25%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+
 
 .aboutText, .profileImage {
     flex: 1;
@@ -98,6 +125,7 @@ a:hover {
 
 .firstProj {
     display: flex;
+    margin: 10vh 10vh;
 }
 
 .image1stProj {
@@ -110,6 +138,14 @@ a:hover {
 
 .firstProjDes {
     flex: 1;  font-family: 'Poppins', sans-serif; font-size: 2.5vh; display: flex; align-items: center; text-align: justify; margin-left: 1%;
+}
+
+.firstProj a {
+    font-size: 5vh;
+}
+
+.bi-github {
+    font-size: 5vh; margin-left: 2%;
 }
 
 /* .projects {
@@ -143,21 +179,21 @@ a:hover {
 }
 
 /* 1434px */
-
+/* 
 @media screen and (max-width: 1434px) {
-    .aboutTitle {
+    .about1 {
         font-size: 5vh;
         background: rgba(255, 255, 255, 0.7);
         padding: 1%;
     }
 
-    .aboutDescription {
+    .about2 {
         font-size: 2vh;
         background: rgba(255, 255, 255, 0.7);
         padding: 1%;
     }
   
-}
+} */
 
 /* 1488px */
 
@@ -168,10 +204,24 @@ a:hover {
         margin-top: 20%;
     }
 
+    .about1, .about2 {
+        margin-left: 40%;
+    }
+
     
 }
 
 @media screen and (max-width: 1382px) {
+    .firstProj {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .projectsText, .firstProj {
+        background: rgba(255, 255, 255, 0.7);
+        padding: 1%;
+    }
+
     .typing, .hello {
         font-size: 5vh;
     }
@@ -207,15 +257,17 @@ a:hover {
         background: rgba(255, 255, 255, 0.7);
         padding: 1%;
     }
+
+    .about {
+        margin-left: 0;
+    }
 }
 
 /* 1133px */
 
 
 @media screen and (max-width: 1133px) {
-    .about {
-        margin-left: 10vh;
-    }
+  
 
     .myProfileImage {
         width: 100%;
@@ -230,21 +282,29 @@ a:hover {
     }
 
     .projects {
-        margin-left: 5%;
+        margin-left: 0.1%;
+        margin-right: 0.1%;
     }
-    
+
     .projectsText {
         background: rgba(255, 255, 255, 0.7);
         padding: 1%;
+        padding-left: 0px;
     }
 
     .firstProj {
         background: rgba(255, 255, 255, 0.7);
-        padding: 1%;
+        padding: 3%;
+        margin: 5vh 5vh;
     }
 
     .firstProjDes span {
         font-size: 3.5vh;
+    }
+
+    .image1stProj {
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -265,6 +325,8 @@ a:hover {
         font-size: 2vh;
     }
 }
+
+/* 739px */
 
 @media screen and (max-width: 739px) {
     .typing, .hello {
@@ -288,21 +350,22 @@ a:hover {
     .myProfileImage {
         width: 70%;
     }
+
+    .projectsText {
+        font-size: 5vh;
+    }
 }
 
-@media screen and (max-width: 439px) {
-    .typing, .hello {
-        font-size: 3vh;
-    }
 
+/* 439px */
+
+@media screen and (max-width: 439px) {
     .blink {
         background: rgba(255, 255, 255, 0.7);
         padding: 1%;
         margin-top: 90%;
     }
-}
-
-@media screen and (max-width: 439px) {
+    
     .typing, .hello {
         font-size: 2vh;
     }
@@ -312,6 +375,20 @@ a:hover {
     }
 
     .aboutDescription {
-        font-size: 1.1vh;
+        font-size: 1.5vh;
+    }
+
+    .firstProjDes span {
+        font-size: 1.5vh;
+    }
+
+    .firstProj a, .bi-github {
+        font-size: 2.5vh;
+    }
+}
+
+@media screen and (max-width: 317px) {
+    .firstProjDes span {
+        font-size: 1.3vh;
     }
 }
