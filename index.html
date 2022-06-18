@@ -18,40 +18,25 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
     
 
 </head>
 <body>
-    <div class="blink">
+    <div class="blink" data-aos="fade-right" data-aos-duration="1000">
         <h1 class="hello">Hello! I make</h1>
         <h1 class="typing"></h1>
     </div>
 
-    <div class="aboutB">
-        <!-- <div class="aboutText">
-            <h2 class="aboutTitle">About Me</h2>
-            <p class="aboutDescription">I am Spencer I. Bohol. I am currently learning Web development at KodeGo. I really love to explore new things and to connect with other people. I am also a K-pop fan. Who's your bias? Let's talk!</p>
-        </div>
-            
-        <div class="profileImage">
-            <img src="images/profile1.png" class="myProfileImage">
-        </div> -->
-
-        <!-- <h2 class="projectsText about1">About Me</h2>
-        <div class="firstProj about2">
-            <p class="firstProjDes">
-                <span>I am Spencer I. Bohol. I am currently learning Web development at KodeGo. I really love to explore new things and to connect with other people. I am also a K-pop fan. Who's your bias? Let's talk!<br> <br> 
-            </p>
-            <div class="image1stProj"><img src="images/profile1.png"></div>
-        </div> -->
-
+    <div class="aboutB" data-aos="zoom-in-right" data-aos-duration="2000">
+    
         <h2 class="about3">About Me</h2>
         <div class="aboutA">
             <p class="about5"><span>I am Spencer I. Bohol. I am currently learning Web development at KodeGo. I really love to explore new things and to connect with other people. I am also a K-pop fan. Who's your bias? Let's talk!</span><br><br>
-                <i class="bi bi-facebook"></i>
-                <i class="bi bi-github"></i>
-                <i class="bi bi-linkedin"></i>
+                <a href="https://www.facebook.com/zxtm89j1/"><i class="bi bi-facebook"></i></a>
+                <a href="https://github.com/zxtm89j1"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/spencerbohol/"><i class="bi bi-linkedin"></i></a>
             </p>
             <div class="about6"><img src="images/profile1.png" class="myProfile"></div>
         </div>
@@ -61,8 +46,8 @@
    
     <div class="projects">
 
-        <h2 class="projectsText">My Projects</h2>
-        <div class="firstProj">
+        <h2 class="projectsText" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">My Projects</h2>
+        <div class="firstProj" data-aos="zoom-in-left" data-aos-duration="1000">
             <div class="image1stProj"><img src="images/project thumnail1.png"></div>
             <p class="firstProjDes">
                 <span>This project was made using HTML, CSS, Bootstrap. This site was inspired by Officially Kmusic. The articles in the site are not mine. They are from various sites such as Officially Kmusic and Soompi. <br> <br> 
@@ -70,7 +55,7 @@
             </p>
         </div>
 
-        <div class="firstProj">
+        <div class="firstProj" data-aos="zoom-in-right" data-aos-duration="1000">
             <p class="firstProjDes">
                 <span> This small project was made using HTML, CSS and JavaScript. The eval() function was used in this calculator. <br> <br> 
                     <a href="https://zxtm89j1.github.io/calculator.github.io/"><i class="bi bi-link"></i></a> <a href="https://github.com/zxtm89j1/calculator.github.io"><i class="bi bi-github"></i></a></span>
@@ -78,7 +63,7 @@
             <div class="image1stProj"><img src="images/project thumbnail2.png"></div>
         </div>
 
-        <div class="firstProj">
+        <div class="firstProj" data-aos="zoom-in-left" data-aos-duration="1000">
             <div class="image1stProj"><img src="images/project thumbnail3.png"></div>
             <p class="firstProjDes">
                 <span>This project was made using HTML, CSS, and JavaScript. The output was from our activity in form validation where we applied what we learned about the topic. Simple validations, alerts were used in making this mini project. <br> <br> 
@@ -86,12 +71,38 @@
             </p>
         </div>
 
+    </div>
+
+    <div class="contact" data-aos="zoom-in-right" data-aos-duration="2000">
+        <h2 class="contactTitle">Contact Me!</h2>
+
+        <form>
+            <div>
+                <div class="divLabel"><label for="Name">Name:</label></div>
+                <div><input/></div>
+
+                <div class="divLabel"><label for="Email">Email</label></div>
+                <div><input/></div>
+
+                <div class="divLabel"><label for="Message">Message:</label></div>
+                <div><textarea name="Message"></textarea></div>
+
+                <button>Submit</button>
+            </div>
+        </form>
 
     </div>
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+<script>
+    AOS.init();
+  </script>
+
     <script src="js/app.js"></script>
 </body>
 </html>
